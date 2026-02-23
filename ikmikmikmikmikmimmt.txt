@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UrbanWear - Clothing Brand</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+header{
+    background:#000;
+    color:#fff;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:24px;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#f39c12;
+}
+
+/* Hero Section */
+.hero{
+    background:url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b') no-repeat center/cover;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:50px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+}
+
+/* Products */
+.products{
+    padding:50px;
+    text-align:center;
+}
+
+.products h2{
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.product-card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product-card h3{
+    margin:10px 0;
+}
+
+.product-card p{
+    color:#555;
+}
+
+.product-card button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    background:#000;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.product-card button:hover{
+    background:#f39c12;
+}
+
+/* Footer */
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>UrbanWear</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>New Collection 2026</h2>
+</section>
+
+<section class="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="T-Shirt">
+            <h3>Oversized T-Shirt</h3>
+            <p>₹999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Jacket">
+            <h3>Street Style Jacket</h3>
+            <p>₹2499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Hoodie">
+            <h3>Premium Hoodie</h3>
+            <p>₹1999</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 UrbanWear | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
